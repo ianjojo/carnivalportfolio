@@ -18,9 +18,9 @@ function scrollRotate() {
   image.style.transform = "rotate(" + window.pageYOffset / 2 + "deg)";
   pin4.style.transform = "rotate(" + window.pageYOffset / 2 + "deg)";
   newpin.style.transform = "rotate(-" + window.pageYOffset / 2 + "deg)";
-  shocked.style.transform = "translateX(" + window.pageYOffset * 1.3 + "px)";
+  shocked.style.transform = "translateX(-" + window.pageYOffset / 5 + "px)";
   //   bird.style.transform = "translate(-" + window.pageYOffset + "px, -300px)";
-  duck.style.transform = "translateX(" + window.pageYOffset / 2 + "px)";
+  duck.style.transform = "translateX(-" + window.pageYOffset / 2 + "px)";
 
   //   bird.style.transform = "translate(" + window.pageYOffset / 2 + ", -300px)";
 }

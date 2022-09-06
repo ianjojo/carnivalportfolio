@@ -2,11 +2,16 @@
 @import url(https://fonts.googleapis.com/css?family=Six+Caps);
 @import url("https://fonts.googleapis.com/css?family=Coda+Caption:800");
 @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300;400;500&family=Special+Elite&display=swap");
+
+.hide {
+  display: none important!;
+}
 body {
   margin: 0;
   padding: 0;
   max-width: 100% !important;
   font-family: monospace;
+  -webkit-overflow-scrolling: auto;
 }
 
 .container {
@@ -14,30 +19,34 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  overflow-x: hidden !important;
+
   height: auto !important;
-  max-width: 100% !important;
-  -webkit-overflow-scrolling: auto;
+  max-width: 100vw !important;
+  min-width: 100%;
 }
 
-body,
 html {
+  padding: 0;
+  margin: 0;
 }
 .polaroid-mobile {
   display: none;
 }
 .flags {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
-  height: 100%;
-  width: 100%;
+
+  height: 100vh;
+  width: 98vw;
+  background-size: contain;
 }
 span {
   font-family: monospace;
 }
 .vintage__container {
   display: inline-block;
+
   margin: 25px auto;
   margin-bottom: -30px;
 }
@@ -123,6 +132,7 @@ span {
   position: relative;
   justify-content: center;
   align-items: center;
+  padding: 0;
 }
 
 .note {
@@ -131,21 +141,34 @@ span {
   top: 0;
   height: 380px;
   padding: 0;
+  z-index: 2;
+}
+
+.project-writeup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 400px;
+  padding-left: 100px;
 }
 
 .projects {
-  width: 100%;
+  width: 100vw;
+  height: 115vh;
   display: flex;
   flex-direction: column;
   /*  //   justify-content: center; */
   align-items: center;
   background-image: url("./images/pinwheel3.png");
-  background-size: contain;
+  background-size: cover;
   padding: 0;
   margin: 0;
 }
 .hero {
   width: 100%;
+  max-width: 100vw;
+  height: 100vh;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -172,44 +195,48 @@ span {
   left: 0;
   background-image: url("./images/layer3.png");
   height: 100vh;
-  width: 100vw;
+  width: 80vw;
   background-size: cover;
-  z-index: 422;
+  z-index: 1;
 }
 .layer2 {
+  overflow-x: hidden !important;
   position: absolute;
   top: 0;
   left: 0;
   background-image: url("./images/l1.png");
   height: 100vh;
-  width: 100vw;
+  width: 80vw;
   background-size: contain;
 }
 .layer3 {
+  overflow-x: hidden !important;
   position: absolute;
   top: 0;
   left: 0;
   background-image: url("./images/l2.png");
   height: 100vh;
-  width: 100vw;
+  width: 80vw;
   background-size: contain;
 }
 .layer4 {
+  overflow-x: hidden !important;
   position: absolute;
   top: 0;
   left: 0;
   background-image: url("./images/l3.png");
   height: 100vh;
-  width: 100vw;
+  width: 80vw;
   background-size: contain;
 }
 .layer5 {
+  overflow: hidden !important;
   position: absolute;
   top: 0;
   left: 0;
   background-image: url("./images/l4.png");
   height: 100vh;
-  width: 100vw;
+  width: 80vw;
   background-size: contain;
 }
 
@@ -241,8 +268,9 @@ span {
 
   display: flex;
   flex-direction: column;
-
+  height: 100vh;
   background-image: url("./images/scary.jpeg");
+  background-size: cover;
 }
 .project-img {
   height: auto;
@@ -262,6 +290,7 @@ span {
 .project-txt {
   width: 400px;
   padding: 50px;
+  padding-left: 0;
   margin-top: 50px;
   font-family: monospace;
   color: antiquewhite;
@@ -304,8 +333,10 @@ span {
 }
 .project-title1 {
   position: absolute;
-  right: 400px;
+  right: 600px;
+  top: 50px;
   font-family: "Special Elite", cursive;
+  transform: rotate(-10deg);
   font-size: 30px;
   width: 200px;
   color: darkblue;
@@ -346,7 +377,7 @@ span {
   position: absolute;
   left: 475px;
   color: lightpink;
-  top: 60px;
+  top: 10px;
   font-family: "Big Shoulders Display", cursive;
   font-size: 80px;
   text-shadow: 0px 0px 30px rgb(246, 78, 204);
@@ -356,7 +387,7 @@ span {
 .newpin {
   position: absolute;
   bottom: -100px;
-  right: 0;
+  left: 500px;
   height: 400px;
   z-index: 1;
 }
@@ -390,7 +421,7 @@ span {
 .content {
   position: relative;
   padding-top: 100px;
-  width: 100vw;
+  width: 98vw;
   display: flex;
   justify-content: center;
 }
@@ -548,9 +579,9 @@ span {
   height: auto;
 }
 .caption {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   text-align: center;
-  line-height: 2em;
+  line-height: em;
 }
 .item {
   width: 30%;
@@ -748,6 +779,8 @@ li:hover {
     z-index: 2;
   }
   .scene {
+    overflow-x: hidden !important;
+    max-width: 100%;
     position: absolute;
     background-size: cover;
     background-position: 50%;
@@ -778,7 +811,7 @@ li:hover {
   }
 
   .polaroid {
-    display: none;
+    width: 350px;
   }
 
   .polaroid-mobile {
@@ -807,6 +840,16 @@ li:hover {
     height: 200px;
     width: 80%;
   }
+
+  .content {
+    padding-top: 0;
+    position: relative;
+
+    width: 98vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
   .vintage {
     text-align: center;
     font-size: 90px !important;
@@ -822,7 +865,7 @@ li:hover {
   }
 
   .layer1 {
-    position: fixed;
+    position: absolute;
   }
 
   .project-title1 {
@@ -844,6 +887,13 @@ li:hover {
     width: 100%;
     z-index: 50000;
     font-size: 70px;
+  }
+
+  .project-writeup {
+    padding-left: 10px;
+    padding-top: 0;
+    height: 300px;
+    margin-top: -50px;
   }
 
   .project2-title1 {
@@ -868,9 +918,8 @@ li:hover {
 
   .project-txt {
     width: 90%;
-    padding: 0 20px;
+    padding-bottom: 12px;
     margin: 0;
-    margin-bottom: 70px;
   }
   .project2-txt {
     color: white;
