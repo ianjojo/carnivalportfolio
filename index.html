@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=0"
+    />
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div
+        class="scene"
+        id="scene"
+        data-friction-x="0.1"
+        data-friction-y="0.1"
+        data-scalar-x="25"
+        data-scalar-y="15"
+      >
+        <div data-depth="0.2" class="layer2 swing-1"></div>
+        <div data-depth="0.1" class="layer3 swing-2"></div>
+        <div data-depth="0.4" class="layer4 swing-3"></div>
+        <div data-depth="0.5" class="layer5 swing-4"></div>
+        <img data-depth="0.05" src="./images/flags.png" class="flags" alt="" />
+      </div>
+      <section class="hero">
+        <div class="layer1"></div>
+        <img
+          src="./images/pin.png"
+          class="pinwheel"
+          alt="pinwheel"
+          data-depth="1"
+        />
+
+        <p class="intro">Ian Jojo's</p>
+        <div class="vintage__container swing-5">
+          <p class="vintage vintage__top">HOUSE OF WONDERS</p>
+          <p class="vintage vintage__bot">HOUSE OF WONDERS</p>
+        </div>
+        <div class="note">
+          <div class="text-container">
+            <p class="typewriter">
+              Step right up and kindly insist that your worries wait in the
+              parking lot as we harken back to a thyme when the web was wild,
+              fun and free!
+            </p>
+            <p class="typewriter2">~ian jojo</p>
+            <img src="./images/paper.png" alt="" class="note" />
+          </div>
+        </div>
+
+        <p class="title">featuring...</p>
+      </section>
+      <div class="projects">
+        <!-- <img src="./images/bird.png" class="bird" alt="" /> -->
+
+        <!-- // **************** project 1 -->
+        <div class="project1">
+          <div class="project-title">
+            <h3 class="project-title1">The Amazing</h3>
+            <h3 class="project-title2">Face Detector</h3>
+          </div>
+          <div class="content">
+            <!-- <img class="project-img" src="./images/facedetect.gif" alt="" /> -->
+            <div class="item">
+              <div class="polaroid">
+                <img src="./images/facedetect.gif" />
+                <div class="caption">
+                  Will the computer machine detect your face?!
+                </div>
+              </div>
+            </div>
+            <img src="./images/facedetect.gif" alt="" class="polaroid-mobile" />
+            <p class="project-txt">
+              My first time using tensowflow.js. Accessing the user's webcam and
+              then determining, with tensorflow, if the object displayed is a
+              face. Also works with many other objects and gets confused by many
+              more. Written in HTML/Javascript.
+              <br />
+              <a href="">hosted</a> <br />
+              <a href="">code</a>
+            </p>
+            <img src="./images/newpin.png" class="newpin" alt="" />
+            <img src="./images/shocked.png" alt="" class="shocked" />
+          </div>
+        </div>
+      </div>
+      <!-- // ********************* proejct 2 -->
+
+      <div class="project2">
+        <div class="project-title">
+          <h3 class="project2-title1">The Diabolical</h3>
+          <h3 class="project2-title2">Colour Machine</h3>
+        </div>
+        <div class="box">
+          <!-- <img class="project-img" src="./images/facedetect.gif" alt="" /> -->
+
+          <p class="project2-txt">
+            A simple but helpful tool for picking colour schemes for a project.
+            Created with Javascript and using the Color API, this app provides
+            you with various colour schemes and allows you to copy the HEX codes
+            by clicking upon a colour name. Click a colour to make it your new
+            seed colour and a new scheme will be generated. Follow the colour!
+            <br />
+            <a href="">hosted</a> <br />
+            <a href="">code</a>
+          </p>
+          <div class="item">
+            <div class="polaroid">
+              <img src="./images/colorpicka.jpeg" />
+              <div class="caption">What shade does your heart desire?</div>
+            </div>
+          </div>
+          <img src="./images/colorpicka.jpeg" alt="" class="polaroid-mobile" />
+          <img src="./images/baby.png" class="baby" alt="scared baby" />
+          <img src="./images/pin4.png" alt="pinwheel" class="pin4" />
+        </div>
+      </div>
+
+      <div class="footer">
+        <ul class="">
+          <li><a href="https://github.com/ianjojo">github</a></li>
+          <li><a href="https://www.linkedin.com/in/ianjojo/">linkedin</a></li>
+          <li><a href="https://twitter.com/ianjojo5">twitter</a></li>
+          <li><a href="mailto:ianallanjohnston@gmail.com">email</a></li>
+        </ul>
+        <!-- <ul>
+          <li>
+            <a href="#"> <i class="fab fa-github icon"></i> </a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-linkedin-in icon"></i></a>
+          </li>
+
+          <li>
+            <a href="#"><i class="fa fa-envelope icon"></i></a>
+          </li>
+
+          <li>
+            <a href="#"><i class="fab fa-twitter icon"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-soundcloud icon"></i></a>
+          </li>
+        </ul> -->
+
+        <div>
+          <p id="copyright" class="copyright">
+            &copy;
+            <script>
+              document
+                .getElementById("copyright")
+                .appendChild(document.createTextNode(new Date().getFullYear()));
+            </script>
+            ian johnston
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
