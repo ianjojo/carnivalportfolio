@@ -31,6 +31,8 @@ console.clear();
 
 const typing = document.querySelectorAll(".typewriter");
 const typing2 = document.querySelectorAll(".typewriter2");
+const typing3 = document.querySelectorAll(".typewriter3");
+const typing4 = document.querySelectorAll(".typewriter4");
 
 function type(element) {
   function randomOpacity() {
@@ -66,3 +68,5 @@ function type(element) {
 
 typing.forEach(type);
 typing2.forEach(type);
+typing3.forEach(type);
+typing4.forEach(type);

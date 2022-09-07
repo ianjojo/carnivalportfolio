@@ -6,6 +6,15 @@
 .hide {
   display: none important!;
 }
+
+.golden {
+  width: 100%;
+  position: absolute;
+  top: -15px;
+  height: 150px;
+
+  z-index: 10000000;
+}
 body {
   margin: 0;
   padding: 0;
@@ -272,6 +281,85 @@ span {
   background-image: url("./images/scary.jpeg");
   background-size: cover;
 }
+.project3 {
+  width: 100vw;
+  padding-top: 100px;
+
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-image: url("./images/stripes.jpg");
+  background-size: cover;
+}
+.project4 {
+  width: 100vw;
+  padding-top: 100px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-image: url("./images/bg4.jpg");
+  background-size: cover;
+}
+.contact {
+  width: 100vw;
+  padding-top: 100px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  background-image: url("./images/bg5.jpg");
+  background-size: cover;
+}
+.contact-top {
+  margin: 0 auto;
+  color: white;
+  font-size: 15px;
+  width: 550px;
+  line-height: 1.5em;
+}
+.prisonmike {
+  height: 300px;
+}
+.quote {
+  color: white;
+  font-size: 22px;
+  width: 200px;
+}
+
+.contact-box {
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.skeleton {
+  position: absolute;
+  border-radius: 50%;
+  top: -50px;
+  z-index: 1000;
+  right: 40px;
+  -moz-box-shadow: 3px 3px 5px 6px #ccc;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+  box-shadow: 3px 3px 5px 6px #ccc;
+}
+.ghost {
+  position: absolute;
+  right: 200px;
+  top: 400px;
+}
+.tallman {
+  position: absolute;
+  right: 150px;
+}
+
+.clown {
+  position: absolute;
+  left: -250px;
+  transform: rotate(30deg);
+  animation: swing 2.5s infinite alternate
+    cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
 .project-img {
   height: auto;
   width: 500px;
@@ -287,6 +375,9 @@ span {
   position: relative;
   padding-top: 100px;
 }
+a {
+  z-index: 7;
+}
 .project-txt {
   width: 400px;
   padding: 50px;
@@ -295,6 +386,7 @@ span {
   font-family: monospace;
   color: antiquewhite;
   font-size: 16px;
+  z-index: 7;
 }
 .squareFrame {
   background: url("./images/wood.jpeg");
@@ -330,6 +422,7 @@ span {
 }
 .project-title {
   position: relative;
+  z-index: 5;
 }
 .project-title1 {
   position: absolute;
@@ -345,6 +438,19 @@ span {
   border-radius: 10px;
   text-transform: uppercase;
   text-align: center;
+}
+
+.project3-writeup {
+  padding-left: 10px;
+  padding-top: 50px;
+  height: 300px;
+  z-index: 6;
+}
+.project4-writeup {
+  padding-left: 10px;
+  padding-top: 50px;
+  height: 400px;
+  z-index: 6;
 }
 
 .project-title2 {
@@ -383,6 +489,62 @@ span {
   text-shadow: 0px 0px 30px rgb(246, 78, 204);
   text-transform: uppercase;
 }
+.project3-title1 {
+  position: absolute;
+  left: 550px;
+  font-family: "Special Elite", cursive;
+  font-size: 30px;
+  width: 200px;
+  color: darkblue;
+  background: lightblue;
+  padding: 10px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  transform: rotate(22deg);
+
+  text-align: center;
+}
+
+.project3-title2 {
+  position: absolute;
+  left: 475px;
+  color: lightpink;
+  top: 80px;
+  right: 70px;
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 80px;
+  text-shadow: 0px 0px 30px rgb(246, 78, 204);
+  text-transform: uppercase;
+  transform: rotate(12deg);
+}
+.project4-title1 {
+  position: absolute;
+  left: 400px;
+  font-family: "Special Elite", cursive;
+  font-size: 30px;
+  width: 200px;
+  color: darkblue;
+  background: lightblue;
+  padding: 10px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  transform: rotate(11deg);
+
+  text-align: center;
+}
+
+.project4-title2 {
+  position: absolute;
+  left: 525px;
+  color: lightpink;
+  top: -20px;
+  right: 70px;
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 80px;
+  text-shadow: 0px 0px 30px rgb(246, 78, 204);
+  text-transform: uppercase;
+  transform: rotate(-3deg);
+}
 
 .newpin {
   position: absolute;
@@ -404,8 +566,8 @@ span {
 
 .pin4 {
   position: absolute;
-  bottom: -150px;
-  right: 600px;
+  top: -50px;
+  right: 160px;
   height: 400px;
   z-index: 1;
 }
@@ -652,13 +814,20 @@ ul {
   font-family: monospace;
 }
 
+.footercontainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .footer {
   background-image: url("./images/wood2.jpeg");
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-end;
+
   height: 200px;
+  position: relative;
+  z-index: 5;
 }
 li {
   list-style-type: none;
@@ -812,11 +981,18 @@ li:hover {
 
   .polaroid {
     width: 350px;
+    display: none;
   }
 
   .polaroid-mobile {
+    margin: 0 auto;
     display: block;
     width: 300px;
+    background: #fff;
+    padding: 1rem;
+    box-shadow: 0 0.2rem 1.2rem rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    z-index: 20;
   }
   .newpin {
     height: 200px;
@@ -830,9 +1006,11 @@ li:hover {
     position: unset;
     left: 0 !important;
     top: 0;
+    z-index: 5;
   }
   .project2-title2 {
     left: 0;
+    z-index: 5;
   }
 
   .vintage__container {
@@ -894,6 +1072,7 @@ li:hover {
     padding-top: 0;
     height: 300px;
     margin-top: -50px;
+    z-index: 50;
   }
 
   .project2-title1 {
@@ -912,6 +1091,7 @@ li:hover {
     margin: 0;
   }
   .projects {
+    height: 800px;
     background-size: cover;
     background-position: 50%;
   }
@@ -919,6 +1099,7 @@ li:hover {
   .project-txt {
     width: 90%;
     padding-bottom: 12px;
+    padding: 0;
     margin: 0;
   }
   .project2-txt {
@@ -939,6 +1120,7 @@ li:hover {
     padding: 0;
     align-items: flex-start;
     justify-content: flex-start;
+    height: 800px;
   }
 
   .box {
