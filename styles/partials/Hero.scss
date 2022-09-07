@@ -72,7 +72,7 @@
   text-align: center;
 
   @include mobile {
-    top: 10px;
+    top: 100px;
     left: 10px;
   }
 }
@@ -177,12 +177,13 @@
   left: 0;
   background-image: url("./images/layer3.png");
   height: 100vh;
-  width: 80vw;
+  width: 100vw;
   background-size: cover;
   z-index: 1;
 
   @include mobile {
-    position: absolute;
+    height: 200vh;
+    width: 200vw;
   }
 }
 .layer2 {
@@ -192,8 +193,13 @@
   left: 0;
   background-image: url("./images/l1.png");
   height: 100vh;
-  width: 80vw;
+  width: 100vw;
   background-size: contain;
+
+  @include mobile {
+    height: 200vh;
+    width: 200vw;
+  }
 }
 .layer3 {
   overflow-x: hidden !important;
@@ -202,8 +208,13 @@
   left: 0;
   background-image: url("./images/l2.png");
   height: 100vh;
-  width: 80vw;
+  width: 100vw;
   background-size: contain;
+
+  @include mobile {
+    height: 200vh;
+    width: 200vw;
+  }
 }
 .layer4 {
   overflow-x: hidden !important;
@@ -212,8 +223,13 @@
   left: 0;
   background-image: url("./images/l3.png");
   height: 100vh;
-  width: 80vw;
+  width: 100vw;
   background-size: contain;
+
+  @include mobile {
+    height: 200vh;
+    width: 200vw;
+  }
 }
 .layer5 {
   overflow: hidden !important;
@@ -222,13 +238,18 @@
   left: 0;
   background-image: url("./images/l4.png");
   height: 100vh;
-  width: 80vw;
+  width: 100vw;
   background-size: contain;
+
+  @include mobile {
+    height: 200vh;
+    width: 200vw;
+  }
 }
 
 .ianjojo {
-  top: 40px;
-  left: 200px;
+  top: 20px;
+  left: 20px;
 }
 .title {
   color: rgb(230, 200, 160);
