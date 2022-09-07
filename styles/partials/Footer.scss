@@ -1,0 +1,59 @@
+.footercontainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.footer {
+  background-image: url("./images/wood2.jpeg");
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  height: 200px;
+  position: relative;
+  z-index: 5;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: monospace;
+
+  @include mobile {
+    max-width: 70%;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+li {
+  list-style-type: none;
+  font-size: 16px;
+  line-height: 1.5;
+  color: white;
+  margin: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+
+  @include mobile {
+    font-size: 12px;
+  }
+}
+
+.copyright {
+  margin: 20px;
+  font-family: monospace;
+  color: antiquewhite;
+  font-size: 16px;
+}
+
+li:hover {
+  animation: shake 0.5s infinite ease-in-out;
+}

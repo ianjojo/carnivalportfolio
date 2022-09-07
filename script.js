@@ -3,10 +3,24 @@ var parallaxInstance = new Parallax(scene, {
   friction: (2.75, 2.75),
   scalar: (1000, 1000),
 });
+let last_known_scroll_position = 0;
+let ticking = false;
 
-window.onscroll = function () {
-  scrollRotate();
-};
+window.addEventListener("scroll", (e) => {
+  last_known_scroll_position = window.scrollY;
+
+  if (!ticking) {
+    window.requestAnimationFrame(() => {
+      scrollRotate();
+      ticking = false;
+    });
+
+    ticking = true;
+  }
+});
+// window.onscroll = function () {
+//   scrollRotate();
+// };
 
 function scrollRotate() {
   let image = document.querySelector(".pinwheel");
@@ -26,8 +40,6 @@ function scrollRotate() {
 }
 
 // typewriter efect
-
-console.clear();
 
 const typing = document.querySelectorAll(".typewriter");
 const typing2 = document.querySelectorAll(".typewriter2");

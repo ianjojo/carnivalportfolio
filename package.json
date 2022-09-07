@@ -1,0 +1,25 @@
+{
+  "name": "carnival-copy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "css": "node-sass --include-path scss ./styles/main.scss ./styles.css",
+    "watch": "nodemon -e scss -x 'npm run css'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ianjojo/carnivalportfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ianjojo/carnivalportfolio/issues"
+  },
+  "homepage": "https://github.com/ianjojo/carnivalportfolio#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
+}

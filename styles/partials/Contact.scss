@@ -1,0 +1,66 @@
+.contact {
+  width: 100vw;
+  padding-top: 100px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  background-image: url("./images/bg5.jpg");
+  background-size: cover;
+
+  @include mobile {
+    padding-top: 0;
+    height: 1080px;
+    background-size: cover;
+    background-position: 50%;
+  }
+}
+.contact img {
+  @include mobile {
+    padding-bottom: 20px;
+  }
+}
+
+.goodbye {
+  color: rgb(230, 200, 160);
+  /*   //   position: absolute; */
+  font-family: "Satisfy", cursive;
+  font-size: 60px;
+  text-shadow: 1px 1px black;
+  line-height: 36px;
+
+  padding: 16px;
+  text-align: center;
+  padding-top: 0;
+  z-index: 1000;
+}
+.contact-top {
+  margin: 0 auto;
+  color: white;
+  font-size: 15px;
+  width: 550px;
+  line-height: 1.5em;
+  @include mobile {
+    width: 90%;
+  }
+}
+.prisonmike {
+  height: 300px;
+}
+.quote {
+  color: white;
+  font-size: 22px;
+  width: 200px;
+}
+
+.contact-box {
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include mobile {
+    padding-top: 10px;
+    flex-direction: column;
+  }
+}

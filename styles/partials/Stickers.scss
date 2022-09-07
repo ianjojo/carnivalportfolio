@@ -1,0 +1,163 @@
+/* gold decoration */
+
+.golden {
+  width: 100%;
+  position: absolute;
+  top: -15px;
+  height: 150px;
+  z-index: 10000000;
+
+  @include mobile {
+    height: 60px;
+  }
+}
+
+.pinwheel {
+  position: absolute;
+  left: -50px;
+  bottom: -100px;
+  height: 400px;
+  width: 400px;
+  z-index: 2;
+
+  @include mobile {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 400px;
+  }
+}
+
+.skeleton {
+  position: absolute;
+  border-radius: 50%;
+  top: -50px;
+  z-index: 1000;
+  height: 100px;
+  right: 40px;
+  -moz-box-shadow: 3px 3px 5px 6px #ccc;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+  box-shadow: 3px 3px 5px 6px #ccc;
+
+  @include mobile {
+    border-radius: 50%;
+    top: -30px;
+    z-index: 1;
+    right: 40px;
+    height: 100px;
+    -moz-box-shadow: 3px 3px 5px 6px #ccc;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+    box-shadow: 3px 3px 5px 6px #ccc;
+  }
+}
+.ghost {
+  position: absolute;
+  right: 200px;
+  top: 500px;
+
+  @include mobile {
+    height: 300px;
+    z-index: -2;
+    position: absolute;
+    left: 60px;
+    top: 100px;
+  }
+}
+.tallman {
+  position: absolute;
+  right: 150px;
+
+  @include mobile {
+    position: absolute;
+    right: 150px;
+    bottom: -100px;
+  }
+}
+
+.clown {
+  position: absolute;
+  left: -250px;
+  transform: rotate(30deg);
+  animation: swing 2.5s infinite alternate
+    cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  @include mobile {
+    height: 300px;
+    left: 100px;
+    bottom: 200px;
+  }
+}
+
+.bird {
+  position: absolute;
+  transform: translate(700px, -300px);
+
+  width: 200px;
+  height: 200px;
+  z-index: 1;
+}
+
+.newpin {
+  position: absolute;
+  bottom: -100px;
+  left: 500px;
+  height: 400px;
+  z-index: 1;
+
+  &:hover {
+    -webkit-animation: swing 2.5s infinite alternate
+      cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    -moz-animation: swing 2.5s infinite alternate
+      cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    animation: swing 2.5s infinite alternate
+      cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  }
+
+  @include mobile {
+    height: 200px;
+    z-index: unset;
+    display: none;
+  }
+}
+
+.baby {
+  position: absolute;
+  bottom: -120px;
+  left: -150px;
+  height: 400px;
+  z-index: 1;
+  transform: rotate(90deg);
+  animation: shake 0.5s infinite;
+
+  @include mobile {
+    height: 100px;
+    position: absolute;
+  }
+}
+
+.pin4 {
+  position: absolute;
+  top: -50px;
+  right: 160px;
+  height: 400px;
+  z-index: 1;
+
+  @include mobile {
+    position: absolute;
+    top: 200px;
+    right: 50px;
+    height: 200px;
+    z-index: 1;
+  }
+}
+.shocked {
+  position: absolute;
+  transform: rotate(90deg);
+  bottom: -200px;
+  left: -25px;
+  height: 400px;
+  z-index: 1;
+
+  @include mobile {
+    display: none;
+  }
+}
