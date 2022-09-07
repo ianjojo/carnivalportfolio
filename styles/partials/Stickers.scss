@@ -31,13 +31,14 @@
 .skeleton {
   position: absolute;
   border-radius: 50%;
-  top: -50px;
+  top: 240px;
   z-index: 1000;
-  height: 100px;
-  right: 40px;
+  height: 150px;
+  left: 240px;
   -moz-box-shadow: 3px 3px 5px 6px #ccc;
   -webkit-box-shadow: 3px 3px 5px 6px #ccc;
   box-shadow: 3px 3px 5px 6px #ccc;
+  z-index: 1;
 
   @include mobile {
     border-radius: 50%;
@@ -49,6 +50,11 @@
     -webkit-box-shadow: 3px 3px 5px 6px #ccc;
     box-shadow: 3px 3px 5px 6px #ccc;
   }
+
+  @include tablet {
+    top: 100px;
+    left: 0;
+  }
 }
 .ghost {
   position: absolute;
@@ -59,8 +65,13 @@
     height: 300px;
     z-index: -2;
     position: absolute;
-    left: 60px;
-    top: 100px;
+    left: 90px;
+    top: 330px;
+  }
+
+  @include tablet {
+    top: 280px;
+    right: -160px;
   }
 }
 .tallman {
@@ -132,6 +143,12 @@
     height: 100px;
     position: absolute;
   }
+
+  @include tablet {
+    bottom: 300px;
+
+    height: 300px;
+  }
 }
 
 .pin4 {
@@ -147,6 +164,10 @@
     right: 50px;
     height: 200px;
     z-index: 1;
+  }
+
+  @include tablet {
+    top: 400px;
   }
 }
 .shocked {

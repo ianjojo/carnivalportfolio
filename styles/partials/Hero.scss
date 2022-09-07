@@ -18,6 +18,12 @@
     height: 200px;
     width: 80%;
   }
+
+  @include tablet {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
 }
 .vintage {
   padding: 0;
@@ -250,6 +256,17 @@
 .ianjojo {
   top: 20px;
   left: 20px;
+
+  @include tablet {
+    top: 120px;
+    left: 130px;
+  }
+}
+.sig {
+  @include tablet {
+    top: 270px;
+    left: 450px;
+  }
 }
 .title {
   color: rgb(230, 200, 160);
