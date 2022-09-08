@@ -1,4 +1,4 @@
-var scene = document.getElementById("scene");
+// var scene = document.getElementById("scene");
 // var parallaxInstance = new Parallax(scene, {
 //   friction: (2.75, 2.75),
 //   scalar: (1000, 1000),
