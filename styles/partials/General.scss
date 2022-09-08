@@ -70,3 +70,41 @@ a {
 a:hover {
   box-shadow: inset 0 -1.2em 0 hsla(0, 0%, 100%, 0.4);
 }
+
+@keyframes spin-anim {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.spinner {
+  width: 64px;
+  height: 64px;
+  // border: 8px solid;
+  border-color: #3d5af1 transparent #3d5af1 transparent;
+  border-radius: 50%;
+  animation: spin-anim 1.2s linear infinite;
+  font-size: 32px;
+}
+.loader-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background: #000;
+  z-index: 1000000000000;
+}
+
+.loading-text {
+  color: white;
+
+  font-family: monospace;
+  font-size: 21px;
+  line-height: 1.5;
+  width: 400px;
+}

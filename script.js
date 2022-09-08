@@ -5,6 +5,10 @@ var parallaxInstance = new Parallax(scene, {
 });
 let last_known_scroll_position = 0;
 let ticking = false;
+const loaderContainer = document.querySelector(".loader-container");
+window.addEventListener("load", () => {
+  loaderContainer.style.display = "none";
+});
 
 window.addEventListener("scroll", (e) => {
   last_known_scroll_position = window.scrollY;

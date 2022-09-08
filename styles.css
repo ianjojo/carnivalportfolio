@@ -61,6 +61,37 @@ a {
 a:hover {
   box-shadow: inset 0 -1.2em 0 rgba(255, 255, 255, 0.4); }
 
+@keyframes spin-anim {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+.spinner {
+  width: 64px;
+  height: 64px;
+  border-color: #3d5af1 transparent #3d5af1 transparent;
+  border-radius: 50%;
+  animation: spin-anim 1.2s linear infinite;
+  font-size: 32px; }
+
+.loader-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background: #000;
+  z-index: 1000000000000; }
+
+.loading-text {
+  color: white;
+  font-family: monospace;
+  font-size: 21px;
+  line-height: 1.5;
+  width: 400px; }
+
 .flags {
   position: absolute;
   top: 0;
@@ -285,12 +316,22 @@ a:hover {
       width: 200vw; } }
 
 .ianjojo {
-  top: 20px;
-  left: 20px; }
+  top: 150px;
+  left: 280px; }
+  @media (min-width: 350px) and (max-width: 819px) {
+    .ianjojo {
+      top: 10px;
+      left: 30px; } }
   @media only screen and (min-width: 820px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
     .ianjojo {
       top: 120px;
       left: 130px; } }
+
+@media (min-width: 350px) and (max-width: 819px) {
+  .sig {
+    left: 240px;
+    top: 150px;
+    font-size: 12px; } }
 
 @media only screen and (min-width: 820px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
   .sig {
@@ -645,7 +686,7 @@ a:hover {
   position: absolute;
   left: 475px;
   color: lightpink;
-  top: 80px;
+  top: 50px;
   right: 70px;
   font-family: "Big Shoulders Display", cursive;
   font-size: 80px;
