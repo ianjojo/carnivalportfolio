@@ -1,8 +1,8 @@
 var scene = document.getElementById("scene");
-var parallaxInstance = new Parallax(scene, {
-  friction: (2.75, 2.75),
-  scalar: (1000, 1000),
-});
+// var parallaxInstance = new Parallax(scene, {
+//   friction: (2.75, 2.75),
+//   scalar: (1000, 1000),
+// });
 let last_known_scroll_position = 0;
 let ticking = false;
 const loaderContainer = document.querySelector(".loader-container");
@@ -22,9 +22,9 @@ window.addEventListener("scroll", (e) => {
     ticking = true;
   }
 });
-// window.onscroll = function () {
-//   scrollRotate();
-// };
+window.onscroll = function () {
+  scrollRotate();
+};
 
 function scrollRotate() {
   let image = document.querySelector(".pinwheel");
@@ -36,9 +36,9 @@ function scrollRotate() {
   image.style.transform = "rotate(" + window.pageYOffset / 2 + "deg)";
   pin4.style.transform = "rotate(" + window.pageYOffset / 2 + "deg)";
   newpin.style.transform = "rotate(-" + window.pageYOffset / 2 + "deg)";
-  shocked.style.transform = "translateX(" + window.pageYOffset * 1.3 + "px)";
+  shocked.style.transform = "translateX(-" + window.pageYOffset / 7 + "px)";
   //   bird.style.transform = "translate(-" + window.pageYOffset + "px, -300px)";
-  duck.style.transform = "translateX(" + window.pageYOffset / 2 + "px)";
+  duck.style.transform = "translateX(-" + window.pageYOffset / 9 + "px)";
 
   //   bird.style.transform = "translate(" + window.pageYOffset / 2 + ", -300px)";
 }

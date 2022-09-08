@@ -57,8 +57,9 @@
   }
 }
 .ghost {
+  display: none;
   position: absolute;
-  right: 200px;
+  left: 100px;
   top: 500px;
 
   @include mobile {

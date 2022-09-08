@@ -3,7 +3,7 @@ body {
   padding: 0;
   max-width: 100% !important;
   font-family: monospace;
-  -webkit-overflow-scrolling: auto;
+  /* -webkit-overflow-scrolling: auto; */
 
   @include mobile {
     body {
@@ -13,7 +13,6 @@ body {
 }
 
 .container {
-  overflow-x: hidden;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -28,6 +27,11 @@ html {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
 }
 
 span {

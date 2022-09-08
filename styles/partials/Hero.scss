@@ -7,6 +7,10 @@
   width: 98vw;
   background-size: contain;
 }
+
+.title-container {
+  position: relative;
+}
 .vintage__container {
   display: inline-block;
 
@@ -169,7 +173,7 @@
   margin: 0;
 
   @include mobile {
-    overflow-x: hidden !important;
+    /*  overflow-x: hidden !important; */
     max-width: 100%;
     position: absolute;
     background-size: cover;
@@ -184,43 +188,29 @@
   background-image: url("./images/layer3.png");
   height: 100vh;
   width: 100vw;
-  background-size: cover;
+  background-size: contain;
+  background-position-x: 1200px;
   z-index: 1;
-
-  @include mobile {
-    height: 200vh;
-    width: 200vw;
-  }
 }
 .layer2 {
   overflow-x: hidden !important;
   position: absolute;
-  top: 0;
+  top: 0px;
   left: 0;
   background-image: url("./images/l1.png");
   height: 100vh;
-  width: 100vw;
+  width: 80vw;
   background-size: contain;
-
-  @include mobile {
-    height: 200vh;
-    width: 200vw;
-  }
 }
 .layer3 {
   overflow-x: hidden !important;
   position: absolute;
-  top: 0;
+  top: 0px;
   left: 0;
   background-image: url("./images/l2.png");
   height: 100vh;
-  width: 100vw;
+  width: 80vw;
   background-size: contain;
-
-  @include mobile {
-    height: 200vh;
-    width: 200vw;
-  }
 }
 .layer4 {
   overflow-x: hidden !important;
@@ -229,33 +219,24 @@
   left: 0;
   background-image: url("./images/l3.png");
   height: 100vh;
-  width: 100vw;
+  width: 80vw;
   background-size: contain;
-
-  @include mobile {
-    height: 200vh;
-    width: 200vw;
-  }
 }
 .layer5 {
-  overflow: hidden !important;
+  overflow-x: hidden !important;
   position: absolute;
   top: 0;
   left: 0;
   background-image: url("./images/l4.png");
   height: 100vh;
-  width: 100vw;
+  width: 80vw;
   background-size: contain;
-
-  @include mobile {
-    height: 200vh;
-    width: 200vw;
-  }
 }
 
 .ianjojo {
-  top: 150px;
-  left: 280px;
+  position: absolute;
+  top: 10px;
+  left: 150px;
 
   @include mobile {
     top: 10px;
@@ -267,6 +248,9 @@
   }
 }
 .sig {
+  position: absolute;
+  display: none;
+
   @include mobile {
     left: 240px;
     top: 150px;
