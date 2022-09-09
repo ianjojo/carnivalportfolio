@@ -57,10 +57,10 @@
   }
 }
 .ghost {
-  display: none;
   position: absolute;
   left: 100px;
   top: 500px;
+  height: 300px;
 
   @include mobile {
     height: 300px;
@@ -111,7 +111,7 @@
 .newpin {
   position: absolute;
   bottom: -100px;
-  left: 500px;
+  left: -100px;
   height: 400px;
   z-index: 1;
 

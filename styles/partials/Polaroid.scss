@@ -6,7 +6,6 @@
   z-index: 20;
 
   @include mobile {
-    width: 350px;
     display: none;
   }
 }
@@ -35,11 +34,14 @@
   line-height: em;
 }
 .item {
-  width: 30%;
+  width: 80%;
   display: inline-block;
-  margin-top: 2rem;
+
   filter: grayscale(100%);
   z-index: 22;
+  @include mobile {
+    display: none;
+  }
 }
 .item .polaroid:before {
   content: "";
