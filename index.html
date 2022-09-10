@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ian Jojo's House of Wonders</title>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/lax.js"></script> -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script> -->
     <link rel="stylesheet" href="styles.css" />
@@ -15,6 +17,13 @@
       <div class="loading-text">loading...</div>
     </div>
     <div class="container">
+      <audio
+        id="audio"
+        style="display: none"
+        src="./music.mp3"
+        controls
+        loop
+      ></audio>
       <div
         class="scene"
         id="scene"
@@ -23,7 +32,7 @@
         data-scalar-x="25"
         data-scalar-y="15"
       ></div>
-
+      <p class="switch">🔕</p>
       <div data-depth="0.2" class="layer2 swing-1"></div>
       <div data-depth="0.1" class="layer3 swing-2"></div>
       <div data-depth="0.4" class="layer4 swing-3"></div>
@@ -199,83 +208,116 @@
         <img src="./images/newpin.webp" class="newpin" alt="" />
         <img src="./images/shocked.webp" alt="" class="shocked" />
         <div class="project__title">
-          <p class="project__title-1">a shockingly</p>
-          <p class="project__title-2">Neat Thing</p>
+          <p class="project__title-1" data-aos="slide-down">THe Amazing</p>
+          <p class="project__title-2" data-aos="slide-left">Face Detector</p>
         </div>
         <div class="project__content">
           <div class="project__left">
-            <p class="project__details">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam qui
-              molestiae ea nesciunt eaque nulla maxime magnam amet. Libero
-              nostrum beatae sunt ullam eligendi ipsa harum eius architecto,
-              delectus alias iusto dignissimos molestias eaque voluptatem
-              adipisci iure illo! Fuga harum nulla, inventore ad provident eum
-              error! Beatae ex modi quos!
+            <p class="project__details" data-aos="slide-right">
+              An experiment with machine learning and tensorflow.js, using a
+              pre-trained object detection ML model called COCO-SSD. Accessing
+              the user's webcam and then determining if the object displayed is
+              a face and, if not, its' best guess. While the machine is smart,
+              it is not a genius.
             </p>
           </div>
           <div class="project__right">
             <div class="project__image-box">
               <div class="item">
-                <div class="polaroid">
-                  <img src="./images/music.webp" />
+                <div
+                  class="polaroid"
+                  data-aos="fade-down"
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-out"
+                  data-aos-mirror="true"
+                  data-aos-once="false"
+                  data-aos-anchor-placement="top-center"
+                >
+                  <img src="./images/facedetect.webp" />
                   <div class="caption">
-                    what ghastly notes will you hear today?
+                    Will the computer machine detect your face?!
                   </div>
                 </div>
               </div>
-              <img class="project__image" src="./images/baby.webp" alt="" />
+              <img
+                class="project__image"
+                src="./images/facedetect.webp"
+                alt=""
+              />
             </div>
           </div>
         </div>
-        <div class="project__links">
+        <div class="project__links" data-aos="fade-up">
           <a class="project__links-link" href="#">live site</a>
           <a class="project__links-link" href="#">code</a>
         </div>
-        <div class="project__tools">
+        <div class="project__tools" data-aos="fade-down">
           <p class="project__tools-tool"><strong>made with:</strong></p>
           <p class="project__tools-tool">html</p>
           <p class="project__tools-tool">javascript</p>
           <p class="project__tools-tool">css</p>
+          <p class="project__tools-tool">tensorflow</p>
         </div>
       </div>
 
       <div class="project p2-bg">
-        <img src="./images/baby.webp" class="baby" alt="scared baby" />
-        <img src="./images/pin4.png" alt="pinwheel" class="pin4" />
+        <img
+          data-aos="zoom-in"
+          data-aos-duration="3000"
+          src="./images/baby.webp"
+          class="baby lax_preset_hueRotate:715:360"
+          alt="scared baby"
+        />
+        <img
+          src="./images/pin4.png"
+          alt="pinwheel"
+          class="pin4"
+          data-aos="zoom-out"
+          data-aos-duration="2000"
+        />
         <div class="project__title">
-          <p class="project__title-1">a shockingly</p>
-          <p class="project__title-2">Neat Thing</p>
+          <p class="project__title-1" data-aos="flip-left">The Diabolical</p>
+          <p class="project__title-2" data-aos="flip-right">Colour Machine</p>
         </div>
         <div class="project__content">
           <div class="project__left">
-            <p class="project__details">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam qui
-              molestiae ea nesciunt eaque nulla maxime magnam amet. Libero
-              nostrum beatae sunt ullam eligendi ipsa harum eius architecto,
-              delectus alias iusto dignissimos molestias eaque voluptatem
-              adipisci iure illo! Fuga harum nulla, inventore ad provident eum
-              error! Beatae ex modi quos!
+            <p class="project__details" data-aos="zoom-out">
+              A simple but helpful tool for picking colour schemes for your next
+              project. Using the Color API, this app provides you with various
+              colour schemes and allows you to copy the HEX codes by clicking
+              upon a colour name. Click a colour to make it your new seed colour
+              and a new scheme will be generated. Follow your heart!
             </p>
           </div>
           <div class="project__right">
             <div class="project__image-box">
               <div class="item">
-                <div class="polaroid">
-                  <img src="./images/music.webp" />
-                  <div class="caption">
-                    what ghastly notes will you hear today?
-                  </div>
+                <div
+                  class="polaroid"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-out"
+                  data-aos-mirror="true"
+                  data-aos-once="false"
+                  data-aos-anchor-placement="top-center"
+                >
+                  <img src="./images/colorpicka.webp" />
+                  <div class="caption">What shade does your heart desire?</div>
                 </div>
               </div>
-              <img class="project__image" src="./images/baby.webp" alt="" />
+              <img
+                class="project__image"
+                src="./images/colorpicka.webp"
+                alt=""
+              />
             </div>
           </div>
         </div>
-        <div class="project__links">
+        <div class="project__links" data-aos="fade-up">
           <a class="project__links-link" href="#">live site</a>
           <a class="project__links-link" href="#">code</a>
         </div>
-        <div class="project__tools">
+        <div class="project__tools" data-aos="fade-down">
           <p class="project__tools-tool"><strong>made with:</strong></p>
           <p class="project__tools-tool">html</p>
           <p class="project__tools-tool">javascript</p>
@@ -285,45 +327,58 @@
 
       <div class="project p3-bg">
         <img
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          data-aos-anchor-placement="top-center"
           src="./images/tallman.webp"
           class="tallman swing-3"
           alt="tall man"
         />
-        <img src="./images/clown.webp" alt="pinwheel" class="clown" />
+        <img
+          src="./images/clown.webp"
+          alt="pinwheel"
+          class="clown"
+          data-aos="zoom-in-up"
+        />
         <div class="project__title">
-          <p class="project__title-1">a shockingly</p>
-          <p class="project__title-2">Neat Thing</p>
+          <p class="project__title-1" data-aos="fade-up">Th Bewildering</p>
+          <p class="project__title-2" data-aos="flip-right">Ghostly Forest</p>
         </div>
         <div class="project__content">
           <div class="project__left">
-            <p class="project__details">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam qui
-              molestiae ea nesciunt eaque nulla maxime magnam amet. Libero
-              nostrum beatae sunt ullam eligendi ipsa harum eius architecto,
-              delectus alias iusto dignissimos molestias eaque voluptatem
-              adipisci iure illo! Fuga harum nulla, inventore ad provident eum
-              error! Beatae ex modi quos!
+            <p class="project__details" data-aos="slide-right">
+              An experiment with p5.js and L-systems - creating lifelike trees
+              using recursion and pi to draw branches, then initiating several
+              rows of instances of the trees and redrawing everything with
+              generative variables everytime the page is clicked.
             </p>
           </div>
           <div class="project__right">
             <div class="project__image-box">
               <div class="item">
-                <div class="polaroid">
-                  <img src="./images/music.webp" />
+                <div class="polaroid" data-aos="zoom-out-right">
+                  <img src="./images/ghostforest.webp" />
                   <div class="caption">
-                    what ghastly notes will you hear today?
+                    You'll never see the same forest twice!
                   </div>
                 </div>
               </div>
-              <img class="project__image" src="./images/baby.webp" alt="" />
+              <img
+                class="project__image"
+                src="./images/ghostforest.webp"
+                alt=""
+              />
             </div>
           </div>
         </div>
-        <div class="project__links">
+        <div class="project__links" data-aos="fade-up">
           <a class="project__links-link" href="#">live site</a>
           <a class="project__links-link" href="#">code</a>
         </div>
-        <div class="project__tools">
+        <div class="project__tools" data-aos="fade-down">
           <p class="project__tools-tool"><strong>made with:</strong></p>
           <p class="project__tools-tool">html</p>
           <p class="project__tools-tool">javascript</p>
@@ -338,39 +393,39 @@
           alt="scary ghost"
         />
         <div class="project__title">
-          <p class="project__title-1">a shockingly</p>
-          <p class="project__title-2">Neat Thing</p>
+          <p class="project__title-1" data-aos="fade-left">The Mummified</p>
+          <p class="project__title-2" data-aos="flip-up">Music Box</p>
         </div>
         <div class="project__content">
           <div class="project__left">
-            <p class="project__details">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam qui
-              molestiae ea nesciunt eaque nulla maxime magnam amet. Libero
-              nostrum beatae sunt ullam eligendi ipsa harum eius architecto,
-              delectus alias iusto dignissimos molestias eaque voluptatem
-              adipisci iure illo! Fuga harum nulla, inventore ad provident eum
-              error! Beatae ex modi quos!
+            <p class="project__details" data-aos="slide-down">
+              A nod to the great Brian Eno. Using p5.js alongside tone.js to
+              play random sets of notes within a scale at random intervals. Each
+              time you reload the page, a new iteration of music will be heard,
+              never the same twice. Moving your mouse to the right side of the
+              screen adds reverb, while moving back to the left mixes it down. I
+              am fascinated by the potential for generative music via code.
             </p>
           </div>
           <div class="project__right">
             <div class="project__image-box">
               <div class="item">
-                <div class="polaroid">
+                <div class="polaroid" data-aos="slide-up">
                   <img src="./images/music.webp" />
                   <div class="caption">
-                    what ghastly notes will you hear today?
+                    What ghastly notes will you hear today?
                   </div>
                 </div>
               </div>
-              <img class="project__image" src="./images/baby.webp" alt="" />
+              <img class="project__image" src="./images/music.webp" alt="" />
             </div>
           </div>
         </div>
-        <div class="project__links">
+        <div class="project__links" data-aos="fade-up">
           <a class="project__links-link" href="#">live site</a>
           <a class="project__links-link" href="#">code</a>
         </div>
-        <div class="project__tools">
+        <div class="project__tools" data-aos="fade-down">
           <p class="project__tools-tool"><strong>made with:</strong></p>
           <p class="project__tools-tool">html</p>
           <p class="project__tools-tool">javascript</p>
@@ -379,7 +434,7 @@
       </div>
 
       <section class="contact">
-        <p class="goodbye">goodbye...</p>
+        <p class="goodbye" data-aos="zoom-in">goodbye...</p>
         <p class="contact-top typewriter3">
           We hope you've enjoyed your time at the House of Wonders. If you're
           looking for a junior web developer where passion is more important
@@ -402,11 +457,12 @@
 
         <div class="contact-box">
           <img
+            data-aos="slide-down"
             src="./images/prisonmike.png"
             class="swing-4 prisonmike"
             alt="prison mike"
           />
-          <p class="quote typewriter4">
+          <p class="quote typewriter4" data-aos="slide-left">
             "You have no idea how high I can fly."
           </p>
         </div>
@@ -416,10 +472,18 @@
         <img src="./images/golden2.png" alt="gold decoration" class="golden" />
         <div class="footercontainer">
           <ul class="">
-            <li><a href="https://github.com/ianjojo">github</a></li>
-            <li><a href="https://www.linkedin.com/in/ianjojo/">linkedin</a></li>
-            <li><a href="https://twitter.com/ianjojo5">twitter</a></li>
-            <li><a href="mailto:ianallanjohnston@gmail.com">email</a></li>
+            <li>
+              <a href="https://github.com/ianjojo">github</a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/ianjojo/">linkedin</a>
+            </li>
+            <li>
+              <a href="https://twitter.com/ianjojo5">twitter</a>
+            </li>
+            <li>
+              <a href="mailto:ianallanjohnston@gmail.com">email</a>
+            </li>
           </ul>
 
           <div>
@@ -440,5 +504,11 @@
     </div>
 
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000, // values from 0 to 3000, with step 50ms
+      });
+    </script>
   </body>
 </html>

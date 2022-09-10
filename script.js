@@ -2,13 +2,33 @@
 // var parallaxInstance = new Parallax(scene, {
 //   friction: (2.75, 2.75),
 //   scalar: (1000, 1000),
-// });
+// // });
 let last_known_scroll_position = 0;
 let ticking = false;
 const loaderContainer = document.querySelector(".loader-container");
 window.addEventListener("load", () => {
   loaderContainer.style.display = "none";
 });
+let on_off = document.querySelector(".switch");
+let audio = document.getElementById("audio");
+
+console.log(audio);
+
+on_off.addEventListener("click", function () {
+  if (audio.paused) {
+    audio.play();
+    on_off.textContent = "🔔";
+  } else {
+    audio.pause();
+    on_off.textContent = "🔕";
+  }
+  // console.log("playing");
+  // audio.play();
+});
+
+function music_stop() {
+  audio.pause();
+}
 
 window.addEventListener("scroll", (e) => {
   last_known_scroll_position = window.scrollY;
