@@ -12,6 +12,12 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <div class="wordle hidden">
+      <h1 class="wordletitle">Birdle</h1>
+      <p class="notification"></p>
+      <div id="game"></div>
+      <p class="return closewordle">Return to the house of wonders.</p>
+    </div>
     <div class="loader-container">
       <div class="spinner">👻</div>
       <div class="loading-text">loading...</div>
@@ -64,6 +70,7 @@
             </p>
             <p class="typewriter2 sig">~ian jojo</p>
             <img src="./images/paper.png" alt="" class="note" />
+            <p class="secret1 swing-1">?</p>
           </div>
         </div>
 
@@ -457,7 +464,7 @@
 
         <div class="contact-box">
           <img
-            data-aos="slide-down"
+            data-aos="zoom-in"
             src="./images/prisonmike.png"
             class="swing-4 prisonmike"
             alt="prison mike"
@@ -504,6 +511,7 @@
     </div>
 
     <script src="script.js"></script>
+    <script defer src="wordle.js" type="module"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init({

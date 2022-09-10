@@ -9,8 +9,18 @@ const loaderContainer = document.querySelector(".loader-container");
 window.addEventListener("load", () => {
   loaderContainer.style.display = "none";
 });
+
+let secret1 = document.querySelector(".secret1");
 let on_off = document.querySelector(".switch");
 let audio = document.getElementById("audio");
+let wordle = document.querySelector(".wordle");
+let closeWordle = document.querySelector(".closewordle");
+let image = document.querySelector(".pinwheel");
+let newpin = document.querySelector(".newpin");
+let shocked = document.querySelector(".shocked");
+//   let bird = document.querySelector(".bird");
+let duck = document.querySelector(".layer1");
+let pin4 = document.querySelector(".pin4");
 
 console.log(audio);
 
@@ -45,14 +55,13 @@ window.addEventListener("scroll", (e) => {
 window.onscroll = function () {
   scrollRotate();
 };
-
+secret1.addEventListener("click", () => {
+  wordle.classList.remove("hidden");
+});
+closeWordle.addEventListener("click", () => {
+  wordle.classList.add("hidden");
+});
 function scrollRotate() {
-  let image = document.querySelector(".pinwheel");
-  let newpin = document.querySelector(".newpin");
-  let shocked = document.querySelector(".shocked");
-  //   let bird = document.querySelector(".bird");
-  let duck = document.querySelector(".layer1");
-  let pin4 = document.querySelector(".pin4");
   image.style.transform = "rotate(" + window.pageYOffset / 2 + "deg)";
   pin4.style.transform = "rotate(" + window.pageYOffset / 2 + "deg)";
   newpin.style.transform = "rotate(-" + window.pageYOffset / 2 + "deg)";

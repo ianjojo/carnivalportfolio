@@ -285,7 +285,15 @@
   width: 80vw;
   background-size: contain;
 }
-
+.secret1 {
+  color: white;
+  font-size: 70px;
+  z-index: 999999999999;
+  position: absolute;
+  cursor: pointer;
+  top: 200px;
+  right: 300px;
+}
 .ianjojo {
   position: absolute;
   left: calc(50% - 70px);
