@@ -353,12 +353,13 @@ a:hover {
 
 .secret1 {
   color: white;
+  opacity: 0.5;
   font-size: 70px;
   z-index: 999999999999;
   position: absolute;
   cursor: pointer;
-  top: 200px;
-  right: 300px; }
+  top: 100px;
+  right: 250px; }
 
 .ianjojo {
   position: absolute;
