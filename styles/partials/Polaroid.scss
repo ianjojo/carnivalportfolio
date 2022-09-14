@@ -102,6 +102,7 @@
   filter: none;
   transform: scale(1, 1) rotate(0deg) !important;
   transition: all 0.35s;
+  z-index: 99999999;
 }
 .item:hover .polaroid:before {
   content: "";

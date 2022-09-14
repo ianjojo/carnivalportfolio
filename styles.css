@@ -352,8 +352,7 @@ a:hover {
   background-size: contain; }
 
 .secret1 {
-  color: white;
-  opacity: 0.5;
+  color: rgba(255, 255, 255, 0.25);
   font-size: 70px;
   z-index: 999999999999;
   position: absolute;
@@ -844,7 +843,7 @@ a:hover {
   .project__title {
     padding-top: 100px;
     position: relative;
-    height: 100px;
+    height: 130px;
     width: 100%; }
     @media (min-width: 350px) and (max-width: 819px) {
       .project__title {
@@ -854,8 +853,8 @@ a:hover {
       top: 0;
       left: 300px;
       font-family: "Special Elite", cursive;
-      font-size: 30px;
-      width: 200px;
+      font-size: 60px;
+      width: 400px;
       color: darkblue;
       background: lightblue;
       padding: 10px;
@@ -871,12 +870,12 @@ a:hover {
           top: 0;
           left: 0; } }
     .project__title-2 {
-      top: 10px;
+      top: 50px;
       left: 310px;
       position: absolute;
       color: lightpink;
       font-family: "Big Shoulders Display", cursive;
-      font-size: 80px;
+      font-size: 110px;
       text-shadow: 0px 0px 30px #f64ecc;
       text-transform: uppercase;
       z-index: 50000; }
@@ -897,7 +896,7 @@ a:hover {
         width: 100%; } }
   .project__details {
     max-width: 400px;
-    min-width: 200px;
+    min-width: 250px;
     color: white;
     line-height: 1.5em;
     font-size: 16px;
@@ -1160,7 +1159,8 @@ li:hover {
 .item:hover {
   filter: none;
   transform: scale(1, 1) rotate(0deg) !important;
-  transition: all 0.35s; }
+  transition: all 0.35s;
+  z-index: 99999999; }
 
 .item:hover .polaroid:before {
   content: "";
