@@ -4,7 +4,12 @@
   box-shadow: 0 0.2rem 1.2rem rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   z-index: 20;
+  width: 400px;
+  overflow: hidden;
 
+  @include tablet {
+    width: 300px;
+  }
   @include mobile {
     display: none;
   }
@@ -25,7 +30,8 @@
   }
 }
 .polaroid > img {
-  width: 100%;
+  max-width: 300px;
+
   height: auto;
 }
 .caption {
@@ -34,11 +40,14 @@
   line-height: em;
 }
 .item {
-  width: 80%;
   display: inline-block;
 
   filter: grayscale(100%);
   z-index: 22;
+
+  @include tablet {
+    width: 400px;
+  }
   @include mobile {
     display: none;
   }
@@ -115,4 +124,12 @@
   right: 5%;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
   transition: all 0.35s;
+}
+
+.polaroid img {
+  width: 100%;
+
+  @include tablet {
+    width: 300px;
+  }
 }

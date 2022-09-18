@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ian Jojo's House of Wonders</title>
     <!-- <script src="https://cdn.jsdelivr.net/npm/lax.js"></script> -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!--   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script> -->
     <link rel="stylesheet" href="styles.css" />
@@ -90,144 +90,80 @@
 
         <p class="title">featuring...</p>
       </section>
-      <!-- <div class="projects">
-        <div class="project1">
-          <div class="project-title">
-            <h3 class="project-title1">The Amazing</h3>
-            <h3 class="project-title2">Face Detector</h3>
-          </div>
-          <div class="content">
-            <div class="item">
-              <div class="polaroid">
-                <img src="./images/facedetect.webp" />
-                <div class="caption">
-                  Will the computer machine detect your face?!
-                </div>
-              </div>
-            </div>
-            <img
-              src="./images/facedetect.webp"
-              alt=""
-              class="polaroid-mobile"
-            />
-            <div class="project-writeup">
-              <p class="project-txt">
-                My first time using tensorflow.js. Accessing the user's webcam
-                and then determining, with tensorflow, if the object displayed
-                is a face. Also works with many other objects and gets confused
-                by many more. Written in HTML/Javascript.
-              </p>
 
-              <a href="">hosted</a>
-              <a href="">code</a>
-            </div>
-            <img src="./images/newpin.webp" class="newpin" alt="" />
-            <img src="./images/shocked.webp" alt="" class="shocked" />
-          </div>
-        </div>
-      </div>
-      <div class="project2">
-        <div class="project-title">
-          <h3 class="project2-title1">The Diabolical</h3>
-          <h3 class="project2-title2">Colour Machine</h3>
-        </div>
-        <div class="box">
-          <div class="project-writeup">
-            <p class="project-txt">
-              A simple but helpful tool for picking colour schemes for a
-              project. Created with Javascript and using the Color API, this app
-              provides you with various colour schemes and allows you to copy
-              the HEX codes by clicking upon a colour name. Click a colour to
-              make it your new seed colour and a new scheme will be generated.
-              Follow the colour!
-            </p>
-
-            <a href="">hosted</a>
-            <a href="">code</a>
-          </div>
-          <div class="item">
-            <div class="polaroid">
-              <img src="./images/colorpicka.webp" />
-              <div class="caption">What shade does your heart desire?</div>
-            </div>
-          </div>
-          <img src="./images/colorpicka.webp" alt="" class="polaroid-mobile" />
-          <img src="./images/baby.webp" class="baby" alt="scared baby" />
-          <img src="./images/pin4.png" alt="pinwheel" class="pin4" />
-        </div>
-      </div>
-
-      <div class="project3">
-        <div class="project-title">
-          <h3 class="project3-title1">the bewildering</h3>
-          <h3 class="project3-title2">Ghostly Forest</h3>
-        </div>
-        <div class="box">
-          <div class="item">
-            <div class="polaroid">
-              <img src="./images/ghostforest.webp" />
-              <div class="caption">You'll never see the same forest twice!</div>
-            </div>
-          </div>
-          <div class="project3-writeup">
-            <p class="project-txt">
-              My first successfuly experiment with p5.js - creating lifelike
-              trees using recursion and pi to draw branches, then initiating
-              several rows of instances of the trees and redrawing everything
-              with generative variables everytime the page is clicked.
-            </p>
-
-            <a href="">hosted</a>
-            <a href="">code</a>
-          </div>
-
-          <img src="./images/ghostforest.webp" alt="" class="polaroid-mobile" />
-          <img
-            src="./images/tallman.webp"
-            class="tallman swing-3"
-            alt="scared baby"
-          />
-          <img src="./images/clown.webp" alt="pinwheel" class="clown" />
-        </div>
-      </div>
-      <div class="project4">
-        <div class="project-title">
-          <h3 class="project4-title1">the zombified</h3>
-          <h3 class="project4-title2">music generator</h3>
-        </div>
-        <div class="box2">
-          <div class="item">
-            <div class="polaroid">
-              <img src="./images/music.webp" />
-              <div class="caption">what ghastly notes will you hear today?</div>
-            </div>
-          </div>
-          <div class="project4-writeup">
-            <p class="project-txt">
-              Using p5.js alongside tone.js to play random sets of notes at
-              random intervals. Moving your mouse to the right side of the
-              screen adds reverb, while moving back to the left mixes it down. I
-              am very fascinated with generative music and was inspired fpr this
-              project by mr Brian Eno.
-            </p>
-
-            <a href="">hosted</a>
-            <a href="">code</a>
-          </div>
-
-          <img src="./images/music.webp" alt="" class="polaroid-mobile" />
-          <img
-            src="./images/ghost.webp"
-            class="ghost swing-1"
-            alt="scary ghost"
-          />
-     
-        </div>
-      </div> -->
-
-      <div class="project p1-bg">
+      <div class="project p5-bg">
         <img src="./images/newpin.webp" class="newpin" alt="" />
         <img src="./images/shocked.webp" alt="" class="shocked" />
+        <div class="project__title">
+          <p class="project__title-1" data-aos="slide-down">The Wonderous</p>
+          <p class="project__title-2" data-aos="slide-left">
+            Election Dashboard
+          </p>
+        </div>
+        <div class="project__content">
+          <div class="project__left">
+            <p class="project__details" data-aos="slide-right">
+              After finding a lack of information online on all the candidates
+              in my upcoming civic election, I put together a dashboard to allow
+              new or unfamiliar voters to get a feel for how they should vote.
+              The project involved a lot of back and forth between candidates
+              and has since seen a large spike in traffic from a Reddit post.
+            </p>
+          </div>
+          <div class="project__right">
+            <div class="project__image-box">
+              <div class="item">
+                <div
+                  class="polaroid"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-out"
+                  data-aos-mirror="true"
+                  data-aos-once="false"
+                  data-aos-anchor-placement="top-center"
+                >
+                  <a href="http://kelowna2022.com" target="_blank">
+                    <img src="./images/election2.jpg" />
+                  </a>
+                  <div class="caption">
+                    Choose a candidate and seal their fate!
+                  </div>
+                </div>
+              </div>
+              <a href="http://kelowna2022.com" target="_blank">
+                <img
+                  class="project__image"
+                  src="./images/election2.jpg"
+                  alt=""
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="project__links" data-aos="fade-up">
+          <a
+            class="project__links-link"
+            href="http://kelowna2022.com/"
+            target="_blank"
+            >live site</a
+          >
+          <a
+            class="project__links-link"
+            href="https://github.com/ianjojo/kelowna-election-2022/"
+            target="_blank"
+            >code</a
+          >
+        </div>
+        <div class="project__tools" data-aos="fade-down">
+          <p class="project__tools-tool"><strong>made with:</strong></p>
+          <p class="project__tools-tool">react</p>
+          <p class="project__tools-tool">sass</p>
+        </div>
+      </div>
+
+      <div class="project p1-bg">
+        <img src="./images/monkey.png" class="monkey swing-3" alt="" />
+
         <div class="project__title">
           <p class="project__title-1" data-aos="slide-down">THe Fantabulous</p>
           <p class="project__title-2" data-aos="slide-left">Face Detector</p>
@@ -245,31 +181,27 @@
           <div class="project__right">
             <div class="project__image-box">
               <div class="item">
-                <a
-                  href="https://whatami.netlify.app/"
-                  class="img-link"
-                  target="_blank"
+                <div
+                  class="polaroid"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-out"
+                  data-aos-mirror="true"
+                  data-aos-once="false"
+                  data-aos-anchor-placement="top-center"
                 >
-                  <div
-                    class="polaroid"
-                    data-aos="fade-down"
-                    data-aos-duration="1000"
-                    data-aos-easing="ease-in-out"
-                    data-aos-mirror="true"
-                    data-aos-once="false"
-                    data-aos-anchor-placement="top-center"
-                  >
-                    <img src="./images/facedetect.webp" />
-                    <div class="caption">
-                      Will the computer machine detect your face?!
-                    </div>
+                  <a href="https://whatami.netlify.app/" target="_blank">
+                    <img src="./images/facedetect.jpg" />
+                  </a>
+                  <div class="caption">
+                    Choose a candidate and seal their fate!
                   </div>
-                </a>
+                </div>
               </div>
               <a href="https://whatami.netlify.app/" target="_blank">
                 <img
                   class="project__image"
-                  src="./images/facedetect.webp"
+                  src="./images/facedetect.jpg"
                   alt=""
                 />
               </a>
@@ -598,11 +530,11 @@
 
     <script src="script.js"></script>
     <script defer src="wordle.js" type="module"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
+    <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script> -->
+    <!-- <script>
       AOS.init({
         duration: 1000, // values from 0 to 3000, with step 50ms
       });
-    </script>
+    </script> -->
   </body>
 </html>

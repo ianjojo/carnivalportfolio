@@ -1,5 +1,5 @@
 @mixin mobile {
-  @media (min-width: $iphone8-width) and (max-width: 819px) {
+  @media (max-width: 450px) {
     @content;
   }
 }
@@ -9,7 +9,7 @@
   }
 }
 @mixin tablet {
-  @media only screen and (min-width: 820px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+  @media (max-width: 1024px) {
     @content;
   }
 }

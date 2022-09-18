@@ -20,7 +20,7 @@ body {
   max-width: 100% !important;
   font-family: monospace;
   /* -webkit-overflow-scrolling: auto; */ }
-  @media (min-width: 350px) and (max-width: 819px) {
+  @media (max-width: 450px) {
     body body {
       max-width: 100vw !important; } }
 
@@ -29,7 +29,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: auto !important;
+  /*   height: auto !important; */
   max-width: 100vw !important;
   min-width: 100%; }
 
@@ -51,7 +51,7 @@ a {
   width: 98vw;
   display: flex;
   justify-content: center; }
-  @media (min-width: 350px) and (max-width: 819px) {
+  @media (max-width: 450px) {
     .content {
       margin: 0;
       padding: 0;
@@ -69,6 +69,10 @@ a {
   color: white;
   text-decoration: none;
   box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.4); }
+  @media (max-width: 450px) {
+    a {
+      box-shadow: inset 0 0 0 rgba(255, 255, 255, 0.4);
+      text-decoration: underline; } }
 
 a:hover {
   box-shadow: inset 0 -1.2em 0 rgba(255, 255, 255, 0.4); }
@@ -119,16 +123,16 @@ a:hover {
   display: inline-block;
   margin: 25px auto;
   margin-bottom: -30px; }
-  @media (min-width: 350px) and (max-width: 819px) {
-    .vintage__container {
-      padding-top: 50px;
-      height: 200px;
-      width: 80%; } }
-  @media only screen and (min-width: 820px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+  @media (max-width: 1024px) {
     .vintage__container {
       width: 80%;
       margin: 0 auto;
       text-align: center; } }
+  @media (max-width: 450px) {
+    .vintage__container {
+      padding-top: 50px;
+      height: 200px;
+      width: 60%; } }
 
 .switch {
   color: white;
@@ -153,10 +157,11 @@ a:hover {
   line-height: 1.2;
   margin: 0;
   position: relative; }
-  @media (min-width: 350px) and (max-width: 819px) {
+  @media (max-width: 450px) {
     .vintage {
+      padding-top: 80px;
       text-align: center;
-      font-size: 90px !important;
+      font-size: 60px !important;
       letter-spacing: 5px;
       line-height: 1; } }
 
@@ -205,7 +210,7 @@ a:hover {
   margin-top: 19px;
   padding: 0;
   text-align: center; }
-  @media (min-width: 350px) and (max-width: 819px) {
+  @media (max-width: 450px) {
     .intro {
       top: 100px;
       left: 10px; } }
@@ -219,7 +224,7 @@ a:hover {
   font-size: 21px;
   line-height: 1.5;
   width: 400px; }
-  @media (min-width: 350px) and (max-width: 819px) {
+  @media (max-width: 450px) {
     .typewriter {
       position: absolute;
       top: 70px;
@@ -251,7 +256,7 @@ a:hover {
   height: 380px;
   padding: 0;
   z-index: 2; }
-  @media (min-width: 350px) and (max-width: 819px) {
+  @media (max-width: 450px) {
     .note {
       width: 100%;
       padding: 0;
@@ -268,7 +273,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center; }
-  @media (min-width: 350px) and (max-width: 819px) {
+  @media (max-width: 450px) {
     .hero {
       max-width: 100%;
       margin: 0;
@@ -288,7 +293,7 @@ a:hover {
   background-repeat: no-repeat;
   padding: 0;
   margin: 0; }
-  @media (min-width: 350px) and (max-width: 819px) {
+  @media (max-width: 450px) {
     .scene {
       /*  overflow-x: hidden !important; */
       max-width: 100%;
@@ -365,24 +370,24 @@ a:hover {
   left: calc(50% - 70px);
   top: -30px;
   font-size: 50px; }
-  @media (min-width: 350px) and (max-width: 819px) {
-    .ianjojo {
-      top: 10px;
-      left: 30px; } }
-  @media only screen and (min-width: 820px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+  @media (max-width: 1024px) {
     .ianjojo {
       top: 120px;
       left: 130px; } }
+  @media (max-width: 450px) {
+    .ianjojo {
+      top: 40px;
+      left: 30px; } }
 
 .sig {
   position: absolute;
   display: none; }
-  @media (min-width: 350px) and (max-width: 819px) {
+  @media (max-width: 450px) {
     .sig {
       left: 240px;
       top: 150px;
       font-size: 12px; } }
-  @media only screen and (min-width: 820px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+  @media (max-width: 1024px) {
     .sig {
       top: 270px;
       left: 450px; } }
@@ -399,7 +404,7 @@ a:hover {
   padding: 16px;
   text-align: center;
   z-index: 1000; }
-  @media (min-width: 350px) and (max-width: 819px) {
+  @media (max-width: 450px) {
     .title {
       font-size: 50px;
       position: unset;
@@ -414,7 +419,7 @@ a:hover {
   align-items: flex-start;
   height: 400px;
   padding-left: 100px; }
-  @media (min-width: 350px) and (max-width: 819px) {
+  @media (max-width: 450px) {
     .project-writeup {
       padding-left: 10px;
       padding-top: 0;
@@ -434,12 +439,12 @@ a:hover {
   padding: 0;
   margin: 0;
   background-position: 50%; }
-  @media (min-width: 350px) and (max-width: 819px) {
+  @media (max-width: 450px) {
     .projects {
       height: 800px;
       background-size: cover;
       background-position: 50%; } }
-  @media only screen and (min-width: 820px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+  @media (max-width: 1024px) {
     .projects {
       height: 600px; } }
 
@@ -447,7 +452,7 @@ a:hover {
   padding-top: 50px;
   display: flex;
   flex-direction: column; }
-  @media (min-width: 350px) and (max-width: 819px) {
+  @media (max-width: 450px) {
     .project1 {
       align-items: flex-start;
       justify-content: flex-start; } }
@@ -460,13 +465,13 @@ a:hover {
   height: 100vh;
   background-image: url("./images/scary.jpeg");
   background-size: cover; }
-  @media (min-width: 350px) and (max-width: 819px) {
+  @media (max-width: 450px) {
     .project2 {
       padding: 0;
       align-items: flex-start;
       justify-content: flex-start;
       height: 800px; } }
-  @media only screen and (min-width: 820px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+  @media (max-width: 1024px) {
     .project2 {
       height: 600px; } }
 
@@ -482,7 +487,7 @@ a:hover {
   @media (min-height: 750px) and (max-height: 870px) {
     .project3 {
       height: 90vh; } }
-  @media only screen and (min-width: 820px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+  @media (max-width: 1024px) {
     .project3 {
       height: 600px; } }
 
@@ -490,14 +495,14 @@ a:hover {
   background-image: url("./images/pinwheel3.jpg");
   background-size: cover;
   background-position: 50%; }
-  @media (min-width: 350px) and (max-width: 819px) {
+  @media (max-width: 450px) {
     .p1-bg {
       background-size: cover; } }
 
 .p2-bg {
   background-image: url("./images/scary.jpeg");
   background-size: contain; }
-  @media (min-width: 350px) and (max-width: 819px) {
+  @media (max-width: 450px) {
     .p2-bg {
       background-size: cover;
       background-position: 50%; } }
@@ -505,7 +510,7 @@ a:hover {
 .p3-bg {
   background-image: url("./images/stripes.jpg");
   background-size: contain; }
-  @media (min-width: 350px) and (max-width: 819px) {
+  @media (max-width: 450px) {
     .p3-bg {
       background-size: cover;
       background-position: 50%; } }
@@ -513,8 +518,16 @@ a:hover {
 .p4-bg {
   background-image: url("./images/bg4.jpg");
   background-size: contain; }
-  @media (min-width: 350px) and (max-width: 819px) {
+  @media (max-width: 450px) {
     .p4-bg {
+      background-size: cover;
+      background-position: 50%; } }
+
+.p5-bg {
+  background-image: url("./images/bg6.jpeg");
+  background-size: contain; }
+  @media (max-width: 450px) {
+    .p5-bg {
       background-size: cover;
       background-position: 50%; } }
 
@@ -529,10 +542,10 @@ a:hover {
   height: 100vh;
   background-image: url("./images/bg4.jpg");
   background-size: cover; }
-  @media (min-width: 350px) and (max-width: 819px) {
+  @media (max-width: 450px) {
     .project4 {
       height: 740px; } }
-  @media only screen and (min-width: 820px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+  @media (max-width: 1024px) {
     .project4 {
       height: 600px; } }
 
@@ -550,7 +563,7 @@ a:hover {
   justify-content: center;
   position: relative;
   padding-top: 100px; }
-  @media (min-width: 350px) and (max-width: 819px) {
+  @media (max-width: 450px) {
     .box {
       height: 100%;
       max-width: 100%;
@@ -570,7 +583,7 @@ a:hover {
   color: antiquewhite;
   font-size: 16px;
   z-index: 7; }
-  @media (min-width: 350px) and (max-width: 819px) {
+  @media (max-width: 450px) {
     .project-txt {
       width: 90%;
       padding-bottom: 12px;
@@ -587,7 +600,7 @@ a:hover {
   flex-direction: row;
   justify-content: center;
   align-items: center; }
-  @media (min-width: 350px) and (max-width: 819px) {
+  @media (max-width: 450px) {
     .box2 {
       display: flex;
       height: 100%;
@@ -617,7 +630,7 @@ a:hover {
   border-radius: 10px;
   text-transform: uppercase;
   text-align: center; }
-  @media (min-width: 350px) and (max-width: 819px) {
+  @media (max-width: 450px) {
     .project-title1 {
       position: unset;
       top: -50px;
@@ -632,7 +645,7 @@ a:hover {
   padding-top: 50px;
   height: 300px;
   z-index: 6; }
-  @media (min-width: 350px) and (max-width: 819px) {
+  @media (max-width: 450px) {
     .project3-writeup {
       padding-left: 10px;
       padding-top: 50px;
@@ -645,13 +658,13 @@ a:hover {
   padding-bottom: 5px;
   height: 400px;
   z-index: 6; }
-  @media (min-width: 350px) and (max-width: 819px) {
+  @media (max-width: 450px) {
     .project4-writeup {
       padding-left: 10px;
       padding-top: 50px;
       height: 200px;
       z-index: 6; } }
-  @media only screen and (min-width: 820px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+  @media (max-width: 1024px) {
     .project4-writeup {
       margin-top: 0;
       padding-top: 0; } }
@@ -665,7 +678,7 @@ a:hover {
   font-size: 80px;
   text-shadow: 0px 0px 30px #f64ecc;
   text-transform: uppercase; }
-  @media (min-width: 350px) and (max-width: 819px) {
+  @media (max-width: 450px) {
     .project-title2 {
       margin-top: -15px;
       position: unset;
@@ -698,7 +711,7 @@ a:hover {
   text-transform: uppercase;
   transform: rotate(-15deg);
   text-align: center; }
-  @media (min-width: 350px) and (max-width: 819px) {
+  @media (max-width: 450px) {
     .project2-title1 {
       position: unset;
       left: 0 !important;
@@ -709,7 +722,7 @@ a:hover {
       padding-top: 10px;
       margin: 0;
       z-index: 10000000; } }
-  @media only screen and (min-width: 820px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+  @media (max-width: 1024px) {
     .project2-title1 {
       position: absolute;
       left: 100px; } }
@@ -723,7 +736,7 @@ a:hover {
   font-size: 80px;
   text-shadow: 0px 0px 30px #f64ecc;
   text-transform: uppercase; }
-  @media (min-width: 350px) and (max-width: 819px) {
+  @media (max-width: 450px) {
     .project2-title2 {
       left: 0;
       z-index: 5;
@@ -732,7 +745,7 @@ a:hover {
       padding: 0;
       padding-left: 50px;
       margin: 0; } }
-  @media only screen and (min-width: 820px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+  @media (max-width: 1024px) {
     .project2-title2 {
       position: absolute;
       font-size: 50px;
@@ -752,13 +765,13 @@ a:hover {
   text-transform: uppercase;
   transform: rotate(22deg);
   text-align: center; }
-  @media (min-width: 350px) and (max-width: 819px) {
+  @media (max-width: 450px) {
     .project3-title1 {
       left: 0 !important;
       top: -100px;
       z-index: 5;
       transform: rotate(-5deg); } }
-  @media only screen and (min-width: 820px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+  @media (max-width: 1024px) {
     .project3-title1 {
       left: 300px;
       top: 0px; } }
@@ -774,14 +787,14 @@ a:hover {
   text-shadow: 0px 0px 30px #f64ecc;
   text-transform: uppercase;
   transform: rotate(5deg); }
-  @media (min-width: 350px) and (max-width: 819px) {
+  @media (max-width: 450px) {
     .project3-title2 {
       left: 200px;
       line-height: 1em;
       font-size: 50px;
       top: -50px;
       z-index: 5; } }
-  @media only screen and (min-width: 820px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+  @media (max-width: 1024px) {
     .project3-title2 {
       transform: rotate(-12deg);
       left: 300px;
@@ -801,11 +814,11 @@ a:hover {
   text-transform: uppercase;
   transform: rotate(11deg);
   text-align: center; }
-  @media (min-width: 350px) and (max-width: 819px) {
+  @media (max-width: 450px) {
     .project4-title1 {
       left: -200px;
       top: -30px; } }
-  @media only screen and (min-width: 820px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+  @media (max-width: 1024px) {
     .project4-title1 {
       left: -350px;
       top: 0; } }
@@ -822,12 +835,12 @@ a:hover {
   text-shadow: 0px 0px 30px #f64ecc;
   text-transform: uppercase;
   transform: rotate(-3deg); }
-  @media (min-width: 350px) and (max-width: 819px) {
+  @media (max-width: 450px) {
     .project4-title2 {
       left: -150px;
       font-size: 55px;
       top: 10px; } }
-  @media only screen and (min-width: 820px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+  @media (max-width: 1024px) {
     .project4-title2 {
       left: -150px;
       top: -30px; } }
@@ -837,7 +850,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: center; }
-  @media (min-width: 350px) and (max-width: 819px) {
+  @media (max-width: 450px) {
     .project__left {
       width: 80%; } }
   .project__title {
@@ -845,7 +858,7 @@ a:hover {
     position: relative;
     height: 130px;
     width: 100%; }
-    @media (min-width: 350px) and (max-width: 819px) {
+    @media (max-width: 450px) {
       .project__title {
         padding-top: 50px; } }
     .project__title-1 {
@@ -862,7 +875,7 @@ a:hover {
       text-transform: uppercase;
       z-index: 1;
       text-align: center; }
-      @media (min-width: 350px) and (max-width: 819px) {
+      @media (max-width: 450px) {
         .project__title-1 {
           font-size: 25px;
           width: 170px;
@@ -879,9 +892,9 @@ a:hover {
       text-shadow: 0px 0px 30px #f64ecc;
       text-transform: uppercase;
       z-index: 50000; }
-      @media (min-width: 350px) and (max-width: 819px) {
+      @media (max-width: 450px) {
         .project__title-2 {
-          top: 0px;
+          top: 22px;
           left: 20px;
           font-size: 50px; } }
   .project__content {
@@ -890,7 +903,7 @@ a:hover {
     justify-content: center;
     align-items: center;
     width: 60%; }
-    @media (min-width: 350px) and (max-width: 819px) {
+    @media (max-width: 450px) {
       .project__content {
         flex-direction: column;
         width: 100%; } }
@@ -901,10 +914,11 @@ a:hover {
     line-height: 1.5em;
     font-size: 16px;
     z-index: 1000; }
-    @media (min-width: 350px) and (max-width: 819px) {
+    @media (max-width: 450px) {
       .project__details {
         max-width: 100%;
-        font-size: 12px; } }
+        font-size: 12px;
+        z-index: 10; } }
   .project__image-box {
     display: flex;
     justify-content: center;
@@ -913,16 +927,18 @@ a:hover {
   .project__image {
     display: none;
     width: 100%; }
-    @media (min-width: 350px) and (max-width: 819px) {
+    @media (max-width: 450px) {
       .project__image {
+        margin: 0 auto;
         display: block;
-        width: 70%; } }
+        width: 70%;
+        overflow: hidden; } }
   .project__links {
     display: flex;
     justify-content: flex-start;
     width: 60%;
     z-index: 100; }
-    @media (min-width: 350px) and (max-width: 819px) {
+    @media (max-width: 450px) {
       .project__links {
         padding-top: 12px;
         width: 85%; } }
@@ -934,7 +950,7 @@ a:hover {
     width: 60%;
     padding-bottom: 100px;
     z-index: 100; }
-    @media (min-width: 350px) and (max-width: 819px) {
+    @media (max-width: 450px) {
       .project__tools {
         padding-top: 12px;
         width: 85%;
@@ -957,14 +973,14 @@ a:hover {
   flex-direction: column;
   background-image: url("./images/bg5.jpg");
   background-size: cover; }
-  @media (min-width: 350px) and (max-width: 819px) {
+  @media (max-width: 450px) {
     .contact {
       padding-top: 0;
       height: 1080px;
       background-size: cover;
       background-position: 50%; } }
 
-@media (min-width: 350px) and (max-width: 819px) {
+@media (max-width: 450px) {
   .contact img {
     padding-bottom: 20px; } }
 
@@ -986,7 +1002,7 @@ a:hover {
   font-size: 15px;
   width: 550px;
   line-height: 1.5em; }
-  @media (min-width: 350px) and (max-width: 819px) {
+  @media (max-width: 450px) {
     .contact-top {
       width: 90%; } }
 
@@ -1003,7 +1019,7 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center; }
-  @media (min-width: 350px) and (max-width: 819px) {
+  @media (max-width: 450px) {
     .contact-box {
       padding-top: 10px;
       flex-direction: column; } }
@@ -1012,7 +1028,7 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center; }
-  @media (min-width: 350px) and (max-width: 819px) {
+  @media (max-width: 450px) {
     .footercontainer {
       display: flex;
       flex-direction: column;
@@ -1034,7 +1050,7 @@ ul {
   align-items: center;
   justify-content: center;
   font-family: monospace; }
-  @media (min-width: 350px) and (max-width: 819px) {
+  @media (max-width: 450px) {
     ul {
       max-width: 70%;
       margin: 0 auto;
@@ -1048,7 +1064,7 @@ li {
   margin: 10px;
   cursor: pointer;
   transition: 0.3s; }
-  @media (min-width: 350px) and (max-width: 819px) {
+  @media (max-width: 450px) {
     li {
       font-size: 12px; } }
 
@@ -1066,14 +1082,19 @@ li:hover {
   padding: 1rem;
   box-shadow: 0 0.2rem 1.2rem rgba(0, 0, 0, 0.2);
   border-radius: 10px;
-  z-index: 20; }
-  @media (min-width: 350px) and (max-width: 819px) {
+  z-index: 20;
+  width: 400px;
+  overflow: hidden; }
+  @media (max-width: 1024px) {
+    .polaroid {
+      width: 300px; } }
+  @media (max-width: 450px) {
     .polaroid {
       display: none; } }
 
 .polaroid-mobile {
   display: none; }
-  @media (min-width: 350px) and (max-width: 819px) {
+  @media (max-width: 450px) {
     .polaroid-mobile {
       margin: 0 auto;
       display: block;
@@ -1085,7 +1106,7 @@ li:hover {
       z-index: 20; } }
 
 .polaroid > img {
-  width: 100%;
+  max-width: 300px;
   height: auto; }
 
 .caption {
@@ -1094,11 +1115,13 @@ li:hover {
   line-height: em; }
 
 .item {
-  width: 80%;
   display: inline-block;
   filter: grayscale(100%);
   z-index: 22; }
-  @media (min-width: 350px) and (max-width: 819px) {
+  @media (max-width: 1024px) {
+    .item {
+      width: 400px; } }
+  @media (max-width: 450px) {
     .item {
       display: none; } }
 
@@ -1174,6 +1197,12 @@ li:hover {
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
   transition: all 0.35s; }
 
+.polaroid img {
+  width: 100%; }
+  @media (max-width: 1024px) {
+    .polaroid img {
+      width: 300px; } }
+
 /* gold decoration */
 .golden {
   width: 100%;
@@ -1181,7 +1210,7 @@ li:hover {
   top: -15px;
   height: 150px;
   z-index: 10000000; }
-  @media (min-width: 350px) and (max-width: 819px) {
+  @media (max-width: 450px) {
     .golden {
       height: 60px; } }
 
@@ -1192,7 +1221,7 @@ li:hover {
   height: 400px;
   width: 400px;
   z-index: 2; }
-  @media (min-width: 350px) and (max-width: 819px) {
+  @media (max-width: 450px) {
     .pinwheel {
       height: 200px;
       width: 200px;
@@ -1210,7 +1239,7 @@ li:hover {
   -webkit-box-shadow: 3px 3px 5px 6px #ccc;
   box-shadow: 3px 3px 5px 6px #ccc;
   z-index: 1; }
-  @media (min-width: 350px) and (max-width: 819px) {
+  @media (max-width: 450px) {
     .skeleton {
       border-radius: 50%;
       top: -30px;
@@ -1220,7 +1249,7 @@ li:hover {
       -moz-box-shadow: 3px 3px 5px 6px #ccc;
       -webkit-box-shadow: 3px 3px 5px 6px #ccc;
       box-shadow: 3px 3px 5px 6px #ccc; } }
-  @media only screen and (min-width: 820px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+  @media (max-width: 1024px) {
     .skeleton {
       top: 100px;
       left: 0; } }
@@ -1230,37 +1259,50 @@ li:hover {
   left: 100px;
   top: 500px;
   height: 300px; }
-  @media (min-width: 350px) and (max-width: 819px) {
+  @media (max-width: 1024px) {
+    .ghost {
+      top: 280px;
+      right: -160px; } }
+  @media (max-width: 450px) {
     .ghost {
       height: 300px;
       z-index: -2;
       position: absolute;
-      left: 90px;
+      left: 50px;
       top: 330px; } }
-  @media only screen and (min-width: 820px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
-    .ghost {
-      top: 280px;
-      right: -160px; } }
 
 .tallman {
   position: absolute;
   right: 150px; }
-  @media (min-width: 350px) and (max-width: 819px) {
+  @media (max-width: 450px) {
     .tallman {
       position: absolute;
       right: 150px;
-      bottom: -100px; } }
+      bottom: -400px;
+      z-index: 0; } }
 
 .clown {
   position: absolute;
   left: -250px;
   transform: rotate(30deg);
   animation: swing 2.5s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955); }
-  @media (min-width: 350px) and (max-width: 819px) {
+  @media (max-width: 450px) {
     .clown {
       height: 300px;
       left: 100px;
-      bottom: 200px; } }
+      bottom: 200px;
+      display: none; } }
+
+.monkey {
+  position: absolute;
+  right: 250px;
+  height: 400px; }
+  @media (max-width: 450px) {
+    .monkey {
+      height: 300px;
+      left: 100px;
+      bottom: 200px;
+      display: none; } }
 
 .bird {
   position: absolute;
@@ -1279,7 +1321,7 @@ li:hover {
     -webkit-animation: swing 2.5s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
     -moz-animation: swing 2.5s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
     animation: swing 2.5s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955); }
-  @media (min-width: 350px) and (max-width: 819px) {
+  @media (max-width: 450px) {
     .newpin {
       height: 200px;
       z-index: unset;
@@ -1293,14 +1335,16 @@ li:hover {
   z-index: 1;
   transform: rotate(90deg);
   animation: shake 0.5s infinite; }
-  @media (min-width: 350px) and (max-width: 819px) {
-    .baby {
-      height: 100px;
-      position: absolute; } }
-  @media only screen and (min-width: 820px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+  @media (max-width: 1024px) {
     .baby {
       bottom: 300px;
       height: 300px; } }
+  @media (max-width: 450px) {
+    .baby {
+      height: 200px;
+      position: absolute;
+      top: 0;
+      left: -50px; } }
 
 .pin4 {
   position: absolute;
@@ -1308,14 +1352,14 @@ li:hover {
   right: 160px;
   height: 400px;
   z-index: 1; }
-  @media (min-width: 350px) and (max-width: 819px) {
+  @media (max-width: 450px) {
     .pin4 {
       position: absolute;
       top: 200px;
       right: 50px;
       height: 200px;
       z-index: 1; } }
-  @media only screen and (min-width: 820px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+  @media (max-width: 1024px) {
     .pin4 {
       top: 400px; } }
 
@@ -1326,7 +1370,7 @@ li:hover {
   left: -25px;
   height: 400px;
   z-index: 1; }
-  @media (min-width: 350px) and (max-width: 819px) {
+  @media (max-width: 450px) {
     .shocked {
       display: none; } }
 

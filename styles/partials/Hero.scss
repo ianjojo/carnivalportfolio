@@ -17,16 +17,15 @@
   margin: 25px auto;
   margin-bottom: -30px;
 
-  @include mobile {
-    padding-top: 50px;
-    height: 200px;
-    width: 80%;
-  }
-
   @include tablet {
     width: 80%;
     margin: 0 auto;
     text-align: center;
+  }
+  @include mobile {
+    padding-top: 50px;
+    height: 200px;
+    width: 60%;
   }
 }
 
@@ -58,8 +57,9 @@
   position: relative;
 
   @include mobile {
+    padding-top: 80px;
     text-align: center;
-    font-size: 90px !important;
+    font-size: 60px !important;
     letter-spacing: 5px;
     line-height: 1;
   }
@@ -300,13 +300,13 @@
   top: -30px;
   font-size: 50px;
 
-  @include mobile {
-    top: 10px;
-    left: 30px;
-  }
   @include tablet {
     top: 120px;
     left: 130px;
+  }
+  @include mobile {
+    top: 40px;
+    left: 30px;
   }
 }
 .sig {
