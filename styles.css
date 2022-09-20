@@ -131,7 +131,8 @@ a:hover {
   @media (max-width: 450px) {
     .vintage__container {
       padding-top: 50px;
-      height: 200px;
+      min-height: 200px;
+      max-height: 350px;
       width: 60%; } }
 
 .switch {
