@@ -312,6 +312,9 @@ a:hover {
   background-size: contain;
   background-repeat: no-repeat;
   z-index: 1; }
+  @media (max-width: 450px) {
+    .layer1 {
+      display: none; } }
 
 .layer2 {
   overflow-x: hidden !important;
@@ -502,7 +505,7 @@ a:hover {
 
 .p2-bg {
   background-image: url("./images/scary.jpeg");
-  background-size: contain; }
+  background-size: cover; }
   @media (max-width: 450px) {
     .p2-bg {
       background-size: cover;

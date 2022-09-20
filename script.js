@@ -22,8 +22,6 @@ let shocked = document.querySelector(".shocked");
 let duck = document.querySelector(".layer1");
 let pin4 = document.querySelector(".pin4");
 
-console.log(audio);
-
 on_off.addEventListener("click", function () {
   if (audio.paused) {
     audio.play();
@@ -32,8 +30,6 @@ on_off.addEventListener("click", function () {
     audio.pause();
     on_off.textContent = "🔕";
   }
-  // console.log("playing");
-  // audio.play();
 });
 
 function music_stop() {

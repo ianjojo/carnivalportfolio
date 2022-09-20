@@ -241,6 +241,10 @@
 
   background-repeat: no-repeat;
   z-index: 1;
+
+  @include mobile {
+    display: none;
+  }
 }
 .layer2 {
   overflow-x: hidden !important;

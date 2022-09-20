@@ -99,7 +99,7 @@
 }
 .p2-bg {
   background-image: url("./images/scary.jpeg");
-  background-size: contain;
+  background-size: cover;
   @include mobile {
     background-size: cover;
     background-position: 50%;

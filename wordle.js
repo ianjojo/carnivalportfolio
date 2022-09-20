@@ -1,7 +1,5 @@
 import { testDictionary, realDictionary } from "./dictionary.js";
 const notification = document.querySelector(".notification");
-// for testing purposes, make sure to use the test dictionary
-console.log("test dictionary:", testDictionary);
 
 const dictionary = realDictionary;
 const state = {
